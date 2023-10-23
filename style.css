@@ -1,0 +1,388 @@
+* {
+    box-sizing: border-box;
+}
+
+.container_bar{
+    width: 100%;
+    max-width: 55px;
+    position: fixed;
+    left: 0;
+    top: 25%;
+}
+.container_bar a{
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 17px;
+    position: relative;
+    transition: all 500ms ease;
+    color: #fff;
+}
+
+.container_bar a:hover{
+    background: #1c1c1c;
+}
+
+.container_bar .icon_face{
+    background: #3b5998;
+    border-radius: 0px 5px 0px 0px;
+}
+.container_bar .icon_insta{
+    background: #751775;
+}
+.container_bar .icon_x{
+    background: #000;
+}
+.container_bar .icon_you{
+    background: #e52a23;
+    border-radius: 0px 0px 5px 0px;
+}
+.container_bar #titulo_icono{
+    position: fixed;
+    background: #1c1c1c;
+    padding: 6px;
+    border-radius: 3px;
+    font-size: 15px;
+    margin-top: -4px;
+    transition: all 500ms ease;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+.container_bar a:hover #titulo_icono{
+    opacity: 1;
+    visibility: visible;
+    margin-left: 30px;
+}
+
+.container_bar #titulo_icono:after{
+    position: absolute;
+    content: '';
+    border-top: 7px solid transparent;
+    border-left: 6px solid transparent;
+    border-right: 7px solid #1c1c1c;
+    border-bottom: 7px solid transparent;
+    right: 100%;
+    top: 8px;
+}
+
+.icon_peque {
+    width: 30px;
+    filter: invert(100%);
+}
+
+#btn_social {
+    display: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 5.5em;
+}
+
+h2 {
+    font-size: 3em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    font-size: 1.25em;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    color: antiquewhite;
+    background-color: rgb(101, 99, 99);
+}
+
+button:hover {
+    background-color: black;
+}
+
+.color-acento {
+    color: brown;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    background-color: rgba(9, 9, 9, 0.5);
+}
+
+header .logo {
+    margin-top: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: aliceblue;
+    font-size: 1.35em;
+}
+
+header .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+header a:hover {
+    text-decoration: none;
+    color: rgb(191, 191, 191);
+    box-shadow: 2px 2px 10px 2px;
+    border-radius: 7px;
+}
+
+#inicio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 100vh;
+    color: white;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/img2.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#historia {
+    background-color: rgba(197, 227, 217, 0.184);
+    height: 100vh;
+}
+
+#historia h2{
+    color: rgb(58, 59, 60);
+}
+
+#historia .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#noticias {
+    background-color: rgb(30, 30, 30);
+    color: whitesmoke;
+    text-align: center;
+    padding: 80px;
+}
+
+#noticias .container {
+    padding: 100px 12px;
+}
+
+#noticias h2 {
+    margin-top: 0;
+}
+
+#noticias p {
+    display: none;
+}
+
+#noticias .carta {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 46px;
+    margin: 22px;
+    border-radius: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.carta:first-child {
+    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.8)), url("media/img3.png");
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("media/img4.png");
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("media/img5.png");
+}
+
+#temachi h2{
+    margin-top: 40px;
+    text-align: center;
+}
+
+#temachi .container {
+    text-align: center;
+    padding: 200px 12px;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#temachi li {
+    margin: 12px 0px;
+    font-weight: bold;
+    display: flex;
+}
+
+#contacto h2 {
+    font-size: 7vw;
+}
+
+#contacto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    background-color: blueviolet;
+    color: white;
+}
+
+#contacto button {
+    font-size: 3vw;
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+    height: 10vh;
+}
+
+footer p {
+    margin: 0;
+    color: rgb(101, 99, 99);
+    padding: 18px;
+}
+
+footer .container {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+
+@media(min-width:720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+
+    header .container {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header nav {
+        flex-direction: row;
+        padding-bottom: 0;
+        padding-right: 20px;
+    }
+
+    #inicio h1{
+        font-size: 6em;
+    }
+
+    #historia .container {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    #historia .img-container {
+        margin-top: 90px;
+        background-image: url("media/entepach1.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        height: 400px;
+        width: 400px;
+    }
+
+    #historia h2{
+        margin-top: 0px;
+    }
+
+    #historia .texto{
+        margin-top: 80px;
+        width: 90%;
+        max-width: 700px;
+        text-align: initial;
+        padding-left: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #noticias{
+        height: 100vh;
+    }
+    #noticias .programas{
+        display: flex;
+        justify-content: center;
+    }
+    #noticias p{
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    #noticias h3{
+        margin-top: 0;
+    }
+
+    #noticias .carta{
+        padding: 15px;
+    }
+
+    #temachi .container{
+        text-align: initial;
+    }
+
+    #temachi ul{
+        margin-left: 100px;
+    }
+
+    #contacto h2{
+        font-size: 5em;
+    }
+
+    #contacto button{
+        font-size: 2em;
+    }
+}
