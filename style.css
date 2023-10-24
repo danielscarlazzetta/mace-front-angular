@@ -336,7 +336,7 @@ header a:hover {
 }
 
 #contacto .formulario-container {
-    max-width: 800px;
+    max-width: 600px;
     margin: 0 auto;
     padding: 20px;
     background-color: none;
@@ -346,19 +346,19 @@ header a:hover {
     text-align: center;
 }
 #contacto p {
-    font-size: 2vw;
+    font-size: 1.7vw;
 }
 
 #contacto form {
     text-align: left;
     display: flex;
     flex-direction: column;
-    font-size: 1.5vw;
+    font-size: 1.1vw;
 }
 
 #contacto label {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 #contacto input {
@@ -375,6 +375,7 @@ input[type="submit"] {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    font-size: 20px;
 }
 
 input[type="submit"]:hover {
@@ -455,6 +456,7 @@ footer .container {
 
     #quienessomos .img-container {
         margin-top: 90px;
+        margin-right: -60px;
         background-image: url("icons/undraw_friendship_mni7.svg");
         background-repeat: no-repeat;
         background-size: cover;
@@ -618,4 +620,22 @@ footer .container {
     height: 550px;
     border-radius: 20px;
     box-shadow: 4px 4px 12px #112c07;
+}
+
+.carousel {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 2;
+}
+
+.carousel img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    max-height: 80%;
 }
