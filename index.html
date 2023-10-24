@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>EntePach</title>
+    <title>Parcelas Parral</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
 
     <section id="inicio">
         <h1>PARCELAS PARRAL</h1>
-        <h3>LOS SUEÑOS SE HACEN REALIDAD</h3>
+        <h5>LOS SUEÑOS SE HACEN REALIDAD</h5>
         <!-- <button>Aplicar</button> -->
     </section>
 
@@ -72,11 +72,9 @@
             <div class="programas">
                 <div class="cartab">
                     <object data="icons/electricTower.svg" type="image/svg+xml" class="svgIcono"></object>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id dignissimos itaque tenetur cumque
-                        molestiae
-                        recusandae, voluptatibus eaque doloribus harum. Perspiciatis, deserunt labore eos possimus
-                        dolores
-                        eligendi voluptas voluptate quae temporibus?</p>
+                    <p>Nuestras propiedades cuentan con cercania a los tendidos electricos
+                        para facilitar a nuestros compradores
+                    </p>
                     <button>+ info</button>
                 </div>
                 <div class="cartab">
@@ -94,7 +92,16 @@
                         molestiae
                         recusandae, voluptatibus eaque doloribus harum. Perspiciatis, deserunt labore eos possimus
                         dolores
-                        eligendi voluptas voluptate quae temporibus?</p>
+                        eligendi voluptas voluptate quae temporibus?
+                    </p>
+                    <button>+ info</button>
+                </div>
+                <div class="cartab">
+                    <object data="icons/contract-document-svgrepo-com.svg" type="image/svg+xml"
+                        class="svgIcono"></object>
+                    <p>Esta propiedades estan saneadas, ademas de que cuentan con un ROL propio, aptas
+                        para su transferencia de forma inmediata
+                    </p>
                     <button>+ info</button>
                 </div>
             </div>
@@ -144,9 +151,30 @@
     </section>
 
     <section id="contacto">
-        <h2>Formulario de contacto!</h2>
-        <button>Contactanos!</button>
+        <div class="formulario-container">
+
+            <h2>Formulario de Contacto</h2>
+            <p>Por favor, llena el formulario a continuación:</p>
+
+            <form action="#" method="post">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="telefono">Número de Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+
+                <label for="correo">Correo Electrónico:</label>
+                <input type="email" id="correo" name="correo" required><br><br>
+
+                <label for="informacion_adicional">Información Adicional:</label><br>
+                <textarea id="informacion_adicional" name="informacion_adicional" rows="4" cols="50"></textarea><br><br>
+
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+
     </section>
+
     <footer>
         <div class="container">
             <p>&copy; Parcelas Parral 2023</p>

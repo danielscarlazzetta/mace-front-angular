@@ -313,10 +313,10 @@ header a:hover {
     padding: 200px 12px;
 }
 
+/* ! Fomulario de contacto */
 
-#contacto h2 {
-    font-size: 7vw;
-}
+
+
 
 #contacto {
     display: flex;
@@ -325,13 +325,54 @@ header a:hover {
     text-align: center;
     flex-direction: column;
     height: 90vh;
-    background-color: blueviolet;
-    color: white;
+    background-color: rgb(255, 255, 255);
+}
+
+#contacto .formulario-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: none;
+    border: none;
+    box-shadow: 0 2px 4px rgba(4, 83, 18, 0.468);
+}
+#contacto h2 {
+    font-size: 1vw;
+}
+
+#contacto form {
+    text-align: left;
+}
+
+#contacto label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+#contacto input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+}
+
+input[type="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
 }
 
 #contacto button {
-    font-size: 3vw;
+    font-size: .1vw;
 }
+
 
 
 /* ! Footer */
