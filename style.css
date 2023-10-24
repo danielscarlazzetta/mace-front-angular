@@ -1,3 +1,23 @@
+/*
+--lima-50: #f2fde8;
+--lima-100: #e0facd;
+--lima-200: #c3f5a1;
+--lima-300: #9bec6a;
+--lima-400: #77df3c;
+--lima-500: #57c31d;
+--lima-600: #419d13; 
+--lima-700: #327813;
+--lima-800: #2c5f15;
+--lima-900: #275017; 
+--lima-950: #112c07;
+
+950 shadow
+900 txt
+500 a 100 degradiente background
+600 botn bg 800 btn hover
+
+*/
+
 * {
     box-sizing: border-box;
 }
@@ -9,6 +29,7 @@
     left: 0;
     top: 25%;
 }
+
 .container_bar a{
     display: block;
     padding: 15px;
@@ -72,10 +93,6 @@
     filter: invert(100%);
 }
 
-#btn_social {
-    display: none;
-}
-
 html {
     scroll-behavior: smooth;
 }
@@ -95,6 +112,10 @@ h2 {
 
 h3 {
     font-size: 2em;
+    margin-top: -126px;
+}
+h4 {
+    margin-bottom: -10px;
 }
 
 p {
@@ -114,18 +135,20 @@ button {
     font-weight: bold;
     padding: 10px 20px;
     border-radius: 10px;
-    border: 1px solid rgba(0, 0, 0, 0.5);
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    border: 1px solid #112c07;
+    box-shadow: 2px 2px 10px #112c07;
     color: antiquewhite;
-    background-color: rgb(101, 99, 99);
+    background-color: #419d13;
+    transition: background-color 0.5s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-    background-color: black;
+    background-color: #2c5f15;
+    box-shadow: 4px 4px 12px #112c07;
 }
 
 .color-acento {
-    color: brown;
+    color: green;
 }
 
 .container {
@@ -163,6 +186,9 @@ header a {
     text-decoration: none;
     font-weight: bold;
     color: rgb(255, 255, 255);
+    font-size: 1.3em;
+    margin-right: 20px;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 header a:hover {
@@ -170,7 +196,9 @@ header a:hover {
     color: rgb(191, 191, 191);
     box-shadow: 2px 2px 10px 2px;
     border-radius: 7px;
+    box-shadow: 4px 4px 12px rgba(0, 0, 0, 0.8)
 }
+
 
 #inicio {
     display: flex;
@@ -180,46 +208,73 @@ header a:hover {
     flex-direction: column;
     height: 100vh;
     color: white;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/img2.png");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("media/banner1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
 }
 
-#historia {
-    background-color: rgba(197, 227, 217, 0.184);
+/* ! Beneficios */
+
+#beneficios {
+    background-color:#fff;
+    color: #275017;
+    text-align: center;
+    padding: 80px;
     height: 100vh;
 }
 
-#historia h2{
-    color: rgb(58, 59, 60);
+#beneficios .container {
+    padding: 100px 12px;
 }
 
-#historia .container {
-    text-align: center;
-    padding: 200px 12px;
+#beneficios h2 {
+    margin-top: 0;
 }
 
-#noticias {
-    background-color: rgb(30, 30, 30);
+#beneficios p {
+    display: none;
+}
+
+#beneficios .cartab {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-color: none;
+    padding: 46px;
+    margin: 22px;
+    border-radius: 50px;
+}
+
+.svgIcono{
+    width: 180px; /* Establece el ancho deseado */
+    height: 180px /* Establece la altura deseada */
+    
+}
+
+
+/* ! Proyectosss */
+
+#proyectos {
+    background-color: rgba(197, 227, 217, 0.184);
     color: whitesmoke;
     text-align: center;
     padding: 80px;
 }
 
-#noticias .container {
+#proyectos .container {
     padding: 100px 12px;
 }
 
-#noticias h2 {
+#proyectos h2 {
     margin-top: 0;
 }
 
-#noticias p {
+#proyectos p {
     display: none;
 }
 
-#noticias .carta {
+#proyectos .carta {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -230,35 +285,34 @@ header a:hover {
 }
 
 .carta:first-child {
-    background-image: linear-gradient(rgba(0,0,0,0.8), rgba(0, 0, 0, 0.8)), url("media/img3.png");
+    background-image: linear-gradient(rgba(75, 131, 66, 0.8), rgba(0,0,0,0.8)), url("media/banner1.jpg");
 }
 
 .carta:nth-child(2) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("media/img4.png");
+    background-image: linear-gradient(rgba(75, 131, 66, 0.8), rgba(0,0,0,0.8)), url("media/banner1.jpg");
 }
 
 .carta:nth-child(3) {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("media/img5.png");
+    background-image: linear-gradient(rgba(75, 131, 66, 0.8), rgba(0,0,0,0.8)), url("media/banner1.jpg");
 }
 
-#temachi h2{
-    margin-top: 40px;
-    text-align: center;
-}
 
-#temachi .container {
-    text-align: center;
-    padding: 200px 12px;
-    align-items: center;
-    justify-content: center;
+/* ! Quienes somos */
+
+#quienessomos {
+    background-color: rgba(197, 227, 217, 0.184);
     height: 100vh;
 }
 
-#temachi li {
-    margin: 12px 0px;
-    font-weight: bold;
-    display: flex;
+#quienessomos h2{
+    color: rgb(58, 59, 60);
 }
+
+#quienessomos .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
 
 #contacto h2 {
     font-size: 7vw;
@@ -278,6 +332,9 @@ header a:hover {
 #contacto button {
     font-size: 3vw;
 }
+
+
+/* ! Footer */
 
 footer {
     background-color: rgb(230, 230, 230);
@@ -320,26 +377,26 @@ footer .container {
         font-size: 6em;
     }
 
-    #historia .container {
+    #quienessomos .container {
         display: flex;
         justify-content: space-evenly;
     }
 
-    #historia .img-container {
+    #quienessomos .img-container {
         margin-top: 90px;
-        background-image: url("media/entepach1.png");
+        background-image: url("icons/undraw_friendship_mni7.svg");
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
         height: 400px;
-        width: 400px;
+        width: 600px;
     }
 
-    #historia h2{
+    #quienessomos h2{
         margin-top: 0px;
     }
 
-    #historia .texto{
+    #quienessomos .texto{
         margin-top: 80px;
         width: 90%;
         max-width: 700px;
@@ -350,39 +407,50 @@ footer .container {
         justify-content: center;
     }
 
-    #noticias{
+    #beneficios{
         height: 100vh;
     }
-    #noticias .programas{
+    #beneficios .programas{
         display: flex;
         justify-content: center;
     }
-    #noticias p{
+    #beneficios p{
         display: block;
         margin-bottom: 30px;
     }
 
-    #noticias h3{
+    #beneficios h3{
         margin-top: 0;
     }
 
-    #noticias .carta{
+    #beneficios .cartab{
         padding: 15px;
     }
 
-    #temachi .container{
-        text-align: initial;
+
+    #proyectos{
+        height: 100vh;
+    }
+    #proyectos .programas{
+        display: flex;
+        justify-content: center;
+    }
+    #proyectos p{
+        display: block;
+        margin-bottom: 30px;
     }
 
-    #temachi ul{
-        margin-left: 100px;
+    #proyectos h3{
+        margin-top: 0;
     }
 
-    #contacto h2{
-        font-size: 5em;
+    #proyectos .carta{
+        padding: 15px;
     }
+
 
     #contacto button{
         font-size: 2em;
     }
+
 }
