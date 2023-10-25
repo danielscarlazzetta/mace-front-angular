@@ -22,6 +22,27 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {font-size: 6em;}
+h2 {font-size: 3em;}
+h3 {
+    font-size: 2em;
+    margin-top: -126px;
+}
+h4 {margin-bottom: -10px;}
+p {font-size: 1.2em;}
+ul {list-style: none;}
+li {font-size: 1.25em;}
+
 .container_bar{
     width: 100%;
     max-width: 55px;
@@ -44,20 +65,6 @@
     background: #1c1c1c;
 }
 
-.container_bar .icon_face{
-    background: #3b5998;
-    border-radius: 0px 5px 0px 0px;
-}
-.container_bar .icon_insta{
-    background: #751775;
-}
-.container_bar .icon_x{
-    background: #000;
-}
-.container_bar .icon_you{
-    background: #e52a23;
-    border-radius: 0px 0px 5px 0px;
-}
 .container_bar #titulo_icono{
     position: fixed;
     background: #1c1c1c;
@@ -86,48 +93,6 @@
     border-bottom: 7px solid transparent;
     right: 100%;
     top: 8px;
-}
-
-.icon_peque {
-    width: 30px;
-    filter: invert(100%);
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-body {
-    font-family: 'Roboto', sans-serif;
-    margin: 0;
-}
-
-h1 {
-    font-size: 5.5em;
-}
-
-h2 {
-    font-size: 3em;
-}
-
-h3 {
-    font-size: 2em;
-    margin-top: -126px;
-}
-h4 {
-    margin-bottom: -10px;
-}
-
-p {
-    font-size: 1.2em;
-}
-
-ul {
-    list-style: none;
-}
-
-li {
-    font-size: 1.25em;
 }
 
 button {
@@ -228,10 +193,6 @@ header a:hover {
     padding: 100px 12px;
 }
 
-#beneficios h2 {
-    margin-top: 0;
-}
-
 #beneficios p {
     display: none;
 }
@@ -271,10 +232,6 @@ header a:hover {
     padding: 100px 12px;
 }
 
-#proyectos h2 {
-    margin-top: 0;
-}
-
 #proyectos p {
     display: none;
 }
@@ -308,10 +265,6 @@ header a:hover {
 #quienessomos {
     background-color: rgba(197, 227, 217, 0.184);
     height: 100vh;
-    color: #275017;
-}
-
-#quienessomos h2{
     color: #275017;
 }
 
@@ -446,9 +399,6 @@ footer .container {
         padding-right: 20px;
     }
 
-    #inicio h1{
-        font-size: 6em;
-    }
 
     #quienessomos .container {
         display: flex;
@@ -464,10 +414,6 @@ footer .container {
         background-position: center center;
         height: 400px;
         width: 600px;
-    }
-
-    #quienessomos h2{
-        margin-top: 0px;
     }
 
     #quienessomos .texto{
