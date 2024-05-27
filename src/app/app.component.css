@@ -1,0 +1,91 @@
+/* Card container */
+.card-container {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 20rem; /* equivalent to w-80 */
+  border-radius: 0.75rem; /* equivalent to rounded-xl */
+  background-color: rgb(184, 184, 184); /* equivalent to bg-white */
+  color: #4b5563; /* equivalent to text-gray-700 */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06); /* equivalent to shadow-md */
+}
+
+/* Card image */
+.card-image {
+  position: relative;
+  margin: 0 1rem;
+  margin-top: -1.5rem; /* equivalent to -mt-6 */
+  height: 14rem; /* equivalent to h-40 */
+  overflow: hidden;
+  border-radius: 0.75rem; /* equivalent to rounded-xl */
+  /* background: linear-gradient(to right, #3b82f6, #2563eb); */
+  color: white; /* equivalent to text-white */
+  box-shadow: 0 10px 15px rgba(59, 82, 246, 0.4), 0 4px 6px rgba(0, 0, 0, 0.1); /* equivalent to shadow-lg shadow-blue-gray-500/40 */
+}
+
+/* Card content */
+.card-content {
+    margin-top: -30px;
+  padding: 1.5rem; /* equivalent to p-6 */
+}
+
+.card-title {
+  margin-bottom: 0.5rem; /* equivalent to mb-2 */
+  font-family: "Sans-serif";
+  font-size: 1.25rem; /* equivalent to text-xl */
+  font-weight: 600; /* equivalent to font-semibold */
+  line-height: 1.75rem; /* equivalent to leading-snug */
+  color: #1e293b; /* equivalent to text-blue-gray-900 */
+  -webkit-font-smoothing: antialiased; /* equivalent to antialiased */
+}
+
+.card-description {
+  font-family: "Sans-serif";
+  font-size: 1rem; /* equivalent to text-base */
+  font-weight: 300; /* equivalent to font-light */
+  line-height: 1.5rem; /* equivalent to leading-relaxed */
+  color: inherit; /* equivalent to text-inherit */
+  -webkit-font-smoothing: antialiased; /* equivalent to antialiased */
+}
+
+/* Card actions */
+.card-actions {
+  padding: 1.5rem; /* equivalent to p-6 */
+  padding-top: 0; /* equivalent to pt-0 */
+  display: flex;
+  flex-direction: raw;
+  gap: 1rem;
+}
+
+.card-button {
+  display: inline-block;
+  border-radius: 0.5rem; /* equivalent to rounded-lg */
+  background-color: #3b82f6; /* equivalent to bg-blue-500 */
+  padding: 0.75rem 1.5rem; /* equivalent to py-3 px-6 */
+  text-align: center;
+  font-family: "Sans-serif";
+  font-size: 0.75rem; /* equivalent to text-xs */
+  font-weight: 700; /* equivalent to font-bold */
+  text-transform: uppercase; /* equivalent to uppercase */
+  color: white; /* equivalent to text-white */
+  box-shadow: 0 4px 6px rgba(59, 82, 246, 0.2); /* equivalent to shadow-md shadow-blue-500/20 */
+  transition: all 0.3s ease; /* equivalent to transition-all */
+  cursor: pointer;
+}
+
+.card-button:hover {
+  box-shadow: 0 10px 15px rgba(59, 82, 246, 0.4); /* equivalent to hover:shadow-lg hover:shadow-blue-500/40 */
+}
+
+.card-button:focus,
+.card-button:active {
+  opacity: 0.85; /* equivalent to focus:opacity-[0.85] active:opacity-[0.85] */
+  box-shadow: none; /* equivalent to focus:shadow-none active:shadow-none */
+}
+
+.card-button:disabled {
+  pointer-events: none; /* equivalent to disabled:pointer-events-none */
+  opacity: 0.5; /* equivalent to disabled:opacity-50 */
+  box-shadow: none; /* equivalent to disabled:shadow-none */
+}
