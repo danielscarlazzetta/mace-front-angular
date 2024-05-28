@@ -1,1 +1,176 @@
-/* You can add global styles to this file, and also import other style files */
+/* Style color */
+/* Base color #3957b1 https://uicolors.app/create*/
+:root {
+  --color-blue-50: #ebf1fa;
+  --color-blue-100: #e1ebf8;
+  --color-blue-200: #c9dbf4;
+  --color-blue-300: #a4c5ec;
+  --color-blue-400: #79a7e1;
+  --color-blue-500: #5a87d7;
+  --color-blue-600: #456dcb;
+  --color-blue-700: #3957b1;
+  --color-blue-800: #364c97;
+  --color-blue-900: #212a4a;
+
+  --color-orange-50: #fff3ed;
+  --color-orange-100: #ffe3d4;
+  --color-orange-200: #ffc2a8;
+  --color-orange-300: #ff9871;
+  --color-orange-400: #ff6238;
+  --color-orange-500: #fe3911;
+  --color-orange-600: #ef2007;
+  --color-orange-700: #c61208;
+  --color-orange-800: #9d110f;
+  --color-orange-900: #7e1210;
+  --color-orange-950: #440608;
+
+  --color-whitepink-50: #fbf9f7;
+  --color-whitepink-100: #f1eae3;
+  --color-whitepink-200: #e2d3c6;
+  --color-whitepink-300: #cfb7a2;
+  --color-whitepink-400: #bb957c;
+  --color-whitepink-500: #ad7d62;
+  --color-whitepink-600: #a06b56;
+  --color-whitepink-700: #855749;
+  --color-whitepink-800: #6d483f;
+  --color-whitepink-900: #593c35;
+  --color-whitepink-950: #2f1e1b;
+
+  --color-yellow-50: #fefbe8;
+  --color-yellow-100: #fff7c2;
+  --color-yellow-200: #ffed87;
+  --color-yellow-300: #ffdb43;
+  --color-yellow-400: #ffca27;
+  --color-yellow-500: #efab03;
+  --color-yellow-600: #ce8300;
+  --color-yellow-700: #a45c04;
+  --color-yellow-800: #88470b;
+  --color-yellow-900: #733b10;
+  --color-yellow-950: #431d05;
+
+  --color-blueb-50: #f5f7fa;
+  --color-blueb-100: #eaeef4;
+  --color-blueb-200: #d1dbe6;
+  --color-blueb-300: #a9bdd0;
+  --color-blueb-400: #7a99b6;
+  --color-blueb-500: #597b9e;
+  --color-blueb-600: #466283;
+  --color-blueb-700: #394f6b;
+  --color-blueb-800: #32445a;
+  --color-blueb-900: #2e3b4c;
+  --color-blueb-950: #212a37;
+
+}
+
+/* Card container */
+.card-container {
+  margin-top: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 20rem; /* equivalent to w-80 */
+  border-radius: 0.75rem; /* equivalent to rounded-xl */
+  background-color: var(--color-blueb-300); /* equivalent to bg-white */
+  color: #4b5563; /* equivalent to text-gray-700 */
+  box-shadow: 0 4px 6px var(--color-blueb-400), 0 2px 4px var(--color-blueb-200); /* equivalent to shadow-md */
+}
+
+/* Card image */
+.card-image {
+  position: relative;
+  margin: 0 1rem;
+  margin-top: -1.5rem;
+  height: 14rem;
+  overflow: hidden;
+  border-radius: 0.75rem;
+  /* background: linear-gradient(to right, #3b82f6, #2563eb); */
+  box-shadow: 0 10px 15px var(--color-blueb-500), 0 4px 6px var(--color-blueb-200); 
+}
+
+/* Card content */
+.card-content {
+  margin-top: -30px;
+  padding: 1.5rem; /* equivalent to p-6 */
+}
+
+.card-title {
+  margin-bottom: 0.5rem;
+  font-family: "Sans-serif";
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.75rem; 
+  color: var(--color-blueb-900);
+  -webkit-font-smoothing: antialiased;
+}
+
+.card-description {
+  font-family: "Sans-serif";
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5rem;
+  color: inherit;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Card actions */
+.card-actions {
+  padding: 1.5rem;
+  padding-top: 0;
+  display: flex;
+  flex-direction: raw;
+  gap: 0.8rem;
+}
+
+.card-button {
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  text-align: center;
+  font-size: 0.75rem;
+  text-transform: none;
+  color: white;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.color-blue {
+  background-color: var(--color-blue-600);
+  box-shadow: 0 4px 6px var(--color-blue-700);
+}
+.color-orange {
+  background-color: var(--color-orange-700);
+  box-shadow: 0 4px 6px var(--color-orange-800);
+}
+
+.color-whitepink {
+  background-color: var(--color-whitepink-400);
+  box-shadow: 0 4px 6px var(--color-whitepink-600);
+}
+
+.color-yellow {
+  background-color: var(--color-yellow-400);
+  box-shadow: 0 4px 6px var(--color-yellow-600);
+  color: var(--color-orange-950);
+}
+
+.color-blueb {
+  background-color: var(--color-blueb-600);
+  box-shadow: 0 4px 6px var(--color-blueb-800);
+}
+
+.card-button:hover {
+  box-shadow: 0 10px 15px rgba(60, 63, 92, 0.4); /* equivalent to hover:shadow-lg hover:shadow-blue-500/40 */
+}
+
+.card-button:focus,
+.card-button:active {
+  opacity: 0.85; /* equivalent to focus:opacity-[0.85] active:opacity-[0.85] */
+  box-shadow: none; /* equivalent to focus:shadow-none active:shadow-none */
+}
+
+.card-button:disabled {
+  pointer-events: none; /* equivalent to disabled:pointer-events-none */
+  opacity: 0.5; /* equivalent to disabled:opacity-50 */
+  box-shadow: none; /* equivalent to disabled:shadow-none */
+}
