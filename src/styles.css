@@ -84,15 +84,18 @@
   --color-black-800: #363936;
   --color-black-900: #303130;
   --color-black-950: #191a19;
-
 }
-
+/* 
+/* 
 body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
     align-items: center;
-    /* height: 100vh; */
+    
+} */ 
+
+body {
     background-color: #020202;
     margin: 0;
 }
@@ -200,3 +203,36 @@ body {
 .card-button:hover {
     transform: scale(1.05);
 }
+
+
+
+/*! navbar*/
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    width: 100%;
+    height: 80px;
+  }
+  
+  li {
+    float: right;
+  }
+
+  .icono-navbar{
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
