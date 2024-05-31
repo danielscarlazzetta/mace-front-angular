@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { CardProductComponent } from './card-product/card-product.component';
+import { InputGroupComponent } from './input-group/input-group.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    CardProductComponent
+    CardProductComponent,
+    InputGroupComponent
   ],
   imports: [
     BrowserModule,
