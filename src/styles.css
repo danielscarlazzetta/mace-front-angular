@@ -309,81 +309,57 @@ body {
 
 /*! input gourp*/
 
-/* { box-sizing:border-box; } */
-
 .container-input {
-  /* font-family: "Roboto"; */
   width: 300px;
   margin: 30px auto 0;
   display: block;
   background: #fff;
-  padding: 10px 40px 40px;
+  padding: 40px 40px 40px;
   border-radius: 5%;
 }
 
-/* form starting stylings ------------------------------- */
-.group {
+
+/*! Input label*/
+
+.input-field{
   position: relative;
-  margin-bottom: 35px;
-  margin-top: 35px;
+  
 }
 
-input {
+.input-field input{
+  width: 280px;
+  border-radius: 6px;
+  height: 60px;
   font-size: 18px;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  border: none;
-  border-bottom: 1px solid #757575;
-}
-input:focus {
+  padding: 0 15px;
+  border: 2px solid var(--color-black-600);
+  background: transparent;
+  color: var(--color-black-100);
+  /*outline: none;*/
   outline: none;
-  font-size: 18px;
-  padding: 10px 10px 10px 5px;
-  display: block;
-  border: none;
-  border-bottom: 1px solid #757575;
+  margin-bottom: 20px;
 }
 
-.group input {
-  width: 300px;
-}
-
-.container-inputs-range .group input {
-  width: 136px;
-}
-
-.container-inputs-range {
-  margin: -20px 0 -10px 0;
-  display: flex;
-  gap: 10px; /* Ajusta el espacio entre los inputs si es necesario */
-  /* justify-content: space-between; */
-}
-
-/* LABEL ======================================= */
-label {
-  color: #999;
-  font-size: 18px;
-  font-weight: normal;
+.input-field label{
   position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  color: var(--color-black-200);
+  font-size: 19px;
   pointer-events: none;
-  left: 5px;
-  top: 10px;
-  transition: 0.2s ease all;
+  transition: .3s ;
 }
 
-/* active state */
-input:focus ~ label,
-input:valid ~ label {
-  top: -20px;
-  font-size: 14px;
-  color: var(--color-black-700);
+input:focus ~ label {
+  top: 0;
+  left: 15px;
+  font-size: 16px;
+  padding: 0 2px;
+  background: var(--color-black-950);
 }
 
-.container-inputs-range {
-  display: flex; /* Activa el modo Flexbox */
-  gap: 10px; /* Espacio entre los elementos */
-}
-
+/*! Select*/
 .select-container {
   display: flex;
   justify-content: center;
@@ -417,8 +393,6 @@ input:valid ~ label {
 }
 
 .icon-container .img-svg-select{
-font-size: 60px;
-color: black;
+  font-size: 60px;
+  color: black;
 }
-
-
