@@ -7,4 +7,16 @@ import { Component } from '@angular/core';
 })
 export class InputGroupComponent {
 
+  inputValue: string = '';
+  inputFocused: boolean = false;
+
+  onFocus() {
+    this.inputFocused = true;
+  }
+
+  onBlur() {
+    if (!this.inputValue) {
+      this.inputFocused = false;
+    }
+  }
 }

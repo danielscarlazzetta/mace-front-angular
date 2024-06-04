@@ -1,30 +1,24 @@
 <div class="container-input">
-  <div class="input-field">
-    <input type="text" />
-    <label>Búsqueda</label>
-  </div>
-  <div class="input-field">
-    <input type="text" placeholder=" "/>
-    <label>Min</label>
-  </div>
-  <div class="input-field">
-    <input type="text" />
-    <label>Max</label>
-  </div>
+  <div class="input-container">
+    <app-custom-input label="Buscar producto" type="text"></app-custom-input>
+    <app-custom-input label="Min" type="number"></app-custom-input>
+    <app-custom-input label="Max" type="number"></app-custom-input>
+    <app-custom-input label="Max" type="password"></app-custom-input>
 
-  <div class="select-container">
-    <select name="" class="select-box">
-      <option value="">Select…</option>
-      <option value="1">Option #1</option>
-      <option value="2">Option #2</option>
-      <option value="3">Option #3</option>
-    </select>
-    <div class="icon-container">
-      <img
-        src="../../assets/svg/triangledown_106509.svg"
-        alt=""
-        class="img-svg-select"
-      />
+    <div class="select-container">
+      <select name="" class="select-box">
+        <option value="">Select…</option>
+        <option value="1">Option #1</option>
+        <option value="2">Option #2</option>
+        <option value="3">Option #3</option>
+      </select>
+      <div class="icon-container">
+        <img
+          src="../../assets/svg/triangledown_106509.svg"
+          alt=""
+          class="img-svg-select"
+        />
+      </div>
     </div>
   </div>
 </div>

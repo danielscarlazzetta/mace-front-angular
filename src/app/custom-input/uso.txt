@@ -1,0 +1,10 @@
+Todos los input admitidos y como usarlos
+<div>
+  <app-custom-input label="Texto" type="text"></app-custom-input>
+  <app-custom-input label="Contraseña" type="password"></app-custom-input>
+  <app-custom-input label="Correo electrónico" type="email"></app-custom-input>
+  <app-custom-input label="Número" type="number"></app-custom-input>
+  <app-custom-input label="Teléfono" type="tel"></app-custom-input>
+  <app-custom-input label="URL" type="url"></app-custom-input>
+  <app-custom-input label="Búsqueda" type="search"></app-custom-input>
+</div>

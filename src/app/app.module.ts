@@ -9,18 +9,23 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { CardProductComponent } from './card-product/card-product.component';
 import { InputGroupComponent } from './input-group/input-group.component';
 
+import { FormsModule } from '@angular/forms';
+import { CustomInputComponent } from './custom-input/custom-input.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     CardProductComponent,
-    InputGroupComponent
+    InputGroupComponent,
+    CustomInputComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-      BrowserAnimationsModule,
-],
+    BrowserAnimationsModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })

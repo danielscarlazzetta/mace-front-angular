@@ -1,0 +1,16 @@
+<div class="input-container">
+    <input 
+      [type]="type === 'password' && isPasswordVisible ? 'text' : type" 
+      [(ngModel)]="inputValue" 
+      (focus)="onFocus()" 
+      (blur)="onBlur()" 
+      [placeholder]="placeholder"
+      required
+    />
+    <label [class.active]="inputFocused || inputValue">{{label}}</label>
+    <button *ngIf="type === 'password'" (click)="togglePasswordVisibility()" type="button">
+      <!-- {{ isPasswordVisible ? 'Ocultar' : 'Mostrar' }} -->
+      <img src="../../assets/svg/eye-close.svg" *ngIf="isPasswordVisible" alt="Eye slash icon" class="change-ico">
+      <img src="../../assets/svg/eye-open.svg" *ngIf="!isPasswordVisible" alt="Eye icon" class="change-ico">
+    </button>
+  </div>
